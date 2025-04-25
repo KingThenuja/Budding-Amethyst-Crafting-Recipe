@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:budding_amethyst"
+    },
+    "title": "Budding Full",
+    "description": "Craft a budding amethyst",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "budding_full_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:budding_amethyst"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1000,
+    "recipes": [
+      "budding_amehyste_craft:small_amethyste",
+      "budding_amehyste_craft:medium_amethyste",
+      "budding_amehyste_craft:large_amethyste",
+      "budding_amehyste_craft:budding_amethyste"
+    ]
+  },
+  "parent": "minecraft:story/enchant_item"
+}
